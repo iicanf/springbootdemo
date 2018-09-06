@@ -21,7 +21,6 @@ public class UserServiceImpl extends AbstractService<User> implements UserServic
     public void test(){
         Example example = new Example(User.class);
         example.selectProperties();
-
     }
 
 }

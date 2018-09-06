@@ -1,6 +1,5 @@
 package com.iicanf;
 
-import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -9,14 +8,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.filter.CharacterEncodingFilter;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.iicanf.dao.mapper")
-@ComponentScan(basePackages = "com.iicanf")
 @EnableDiscoveryClient
-@EnableSwagger2Doc
+@ComponentScan(basePackages = "com.iicanf")
 public class Application extends SpringBootServletInitializer {
 
     @Override
